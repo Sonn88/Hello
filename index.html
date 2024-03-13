@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  rel="stylesheet" href="style.css" >
+</head>
+<body>
+<div class="space">
+<div class="main">
+     <h1> What Is Your Name?</h1>
+    <div >
+        <div>
+        <label for="First" >First name</label >
+        <input type="text" id="First" name="First">
+    </div>
+    <br>
+    <div >
+
+        <label for="Last">Last Name</label>
+        <input type="text" id="Last" name="Last">
+
+    </div>
+
+</div>
+    <br>
+    <button id="hi"> Say Hello</button>
+    <br>
+    <button id clear>Clear</button>
+    <p></p>
+
+</div>
+</div>
+<script>
+    const first= document.getElementById('First');
+    const last = document.getElementById('Last');
+    const changeInput = document.querySelector('p');
+    const hi = document.getElementById('hi');
+     const clear = document.getElementById('clear');
+
+    hi.addEventListener('click',function(e){
+        let Fullname = document.createElement('h2');
+        Fullname.innerHTML =` Hello ` + first.value +' ' + last.value;
+        changeInput.insertAdjacentElement("afterbegin", Fullname);
+    })
+
+
+
+</script>
+</body>
+</html>

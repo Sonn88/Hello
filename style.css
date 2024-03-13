@@ -1,0 +1,54 @@
+body{
+    background-color: gray;
+
+}
+
+.space{
+    max-width: 2000px;
+    max-height: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    box-shadow: 0 1px 3px 0 rgb(255, 255, 255), 0 1px 2px -1px rgb(255, 255, 255);
+    background: black;
+    padding: 20px;
+    border-radius: 50px;
+     width: 450px;
+  height: 800px;
+
+
+
+
+}
+input[type="text"], textarea, select{
+    box-shadow: 0 1px 3px 0 rgba(214, 229, 213, 0.66), 0 1px 2px -1px rgba(214, 229, 213, 0.66);
+
+    border: 1px solid rgba(214, 229, 213, 0.66);
+    border-radius: 2px;
+    padding: 8px 6px;
+
+}
+label{
+    color: seagreen;
+    display: block;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: 20px;
+}
+h1{
+    color: seagreen;
+    font-size: xxx-large;
+    text-align: center;
+}
+.row {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+
+}
+h2{
+    color: seagreen;
+    text-align: center;
+}
